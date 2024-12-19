@@ -16,6 +16,6 @@ int main() {
     int arr[6] = {1, 2, 3, 4, 5};
     int size = 5;
 
-    addElementToEnd(arr, size, 6);  // Example of adding a new element
+    addElementToEnd(arr, size, 6);  
     return 0;
 }
