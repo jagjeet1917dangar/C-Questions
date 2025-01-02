@@ -1,25 +1,26 @@
 ### 1st approach ###
 
-#include <iostream>
+#include <iostream> 
 using namespace std; 
-void sum(int n) {
-    int evenSum = 0, oddSum = 0;
-    while (n > 0) {  
-        int digit = n % 10;  
-        if (digit % 2 == 0) {  
-            evenSum += digit;  
-        } else {  
-            oddSum += digit; 
+void count(int n){
+    int even=0;int odd=0;
+    while(n>0){
+        int digit=n%10;
+        if(digit%2==0){
+            even+=digit;
         }
-        n /= 10;  
+        else{
+            odd+=digit;
+        }
+         n/=10;
     }
-    cout << "Sum of even digits: " << evenSum << endl;  
-    cout << "Sum of odd digits: " << oddSum << endl; 
+    cout<<" sum of even numbers : "<<even<<endl;
+    cout<<" sum of odd numbers : "<<odd<<endl;
 }
-int main() {
-    int n;  
-    cout << "Enter a number: "; 
-    cin >> n;  
-    sum(n);
-    return 0; 
+int main(){
+    int n;
+    cout<<" Enter the number : ";
+    cin>>n;
+    count(n);
+    return 0;
 }
